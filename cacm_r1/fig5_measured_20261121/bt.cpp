@@ -35,11 +35,13 @@ int main() {
             }
         }
         double best = 1e30;
-        for (int r = 0; r < 7; r++) {
+        // at least 7 repetitions, and until 0.3 s have been spent on this size (at most 2,000)
+        double spent = 0;
+        for (int r = 0; r < 7 || (spent < 300.0 && r < 2000); r++) {
             double t0 = now_ms();
             #pragma omp parallel for num_threads(WORKERS) schedule(dynamic, 1)
             for (long s = 0; s < n_sym; s++) { long tr = 0; pnl[s] = one_symbol(&px[s * T], tr); ntr[s] = tr; }
-            double d = now_ms() - t0; if (d < best) best = d;
+            double d = now_ms() - t0; spent += d; if (d < best) best = d;
         }
         double total = 0; long trades = 0;
         for (long s = 0; s < n_sym; s++) { total += pnl[s]; trades += ntr[s]; }

@@ -37,13 +37,14 @@ for n in [1000, 10000, 100000, 1000000, 10000000, 100000000]:
     if which == "python":
         if n > 10000000:
             continue
-        reps = 3 if n <= 1000000 else 1
+        min_reps = 1
         f = price_python
     else:
-        reps = 7 if n <= 10000000 else 3
+        min_reps = 7
         f = price_numpy
-    best = 1e30
-    for _ in range(reps):
+    # at least min_reps runs, and until 0.3 s have been spent on this size (at most 2,000)
+    best = 1e30; spent = 0.0; k = 0
+    while k < min_reps or (spent < 300.0 and k < 2000):
         t0 = time.perf_counter(); pr = f(n); d = (time.perf_counter() - t0) * 1e3
-        best = min(best, d)
+        best = min(best, d); spent += d; k += 1
     print("KEY", which, "mc n", n, "ms", best, "price", repr(pr), flush=True)

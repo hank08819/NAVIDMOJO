@@ -36,7 +36,9 @@ int main() {
     long sizes[] = {1000, 10000, 100000, 1000000, 10000000, 100000000};
     for (long n : sizes) {
         double best = 1e30, pr = 0;
-        for (int t = 0; t < 7; t++) { double t0 = now_ms(); pr = price(n); double d = now_ms() - t0; if (d < best) best = d; }
+        // at least 7 repetitions, and until 0.3 s have been spent on this size (at most 2,000)
+        double spent = 0;
+        for (int t = 0; t < 7 || (spent < 300.0 && t < 2000); t++) { double t0 = now_ms(); pr = price(n); double d = now_ms() - t0; spent += d; if (d < best) best = d; }
         printf("KEY cpp mc n %ld ms %.6f price %.15g\n", n, best, pr);
     }
 }

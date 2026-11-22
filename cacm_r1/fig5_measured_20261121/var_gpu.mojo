@@ -157,7 +157,10 @@ def main() raises:
         var best: UInt = 0
         var v: Float64 = 0.0
         var comp_sum: Float64 = 0.0
-        for r in range(6):
+        # repeat at least 7 times and until 0.3 s have been spent on this size (at most 2,000 times)
+        var r = 0
+        var spent: UInt = 0
+        while r < 8 or (spent < 300000000 and r < 2000):
             var t0 = perf_counter_ns()
             @parameter
             def centre(wk: Int):
@@ -194,6 +197,8 @@ def main() raises:
                 comp_sum += 2.3263478740408408 * w * h_sw[i] / sigma
             var d = perf_counter_ns() - t0
             # the first repetition includes kernel compilation and is not counted
+            spent += d
             if r == 1 or (r > 1 and d < best):
                 best = d
+            r += 1
         print("KEY mojo_gpu var n", n, "ms", Float64(best) / 1.0e6, "var99", v, "component_sum", comp_sum)

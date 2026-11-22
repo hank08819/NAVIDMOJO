@@ -41,7 +41,10 @@ def main() raises:
         if groups < workers:
             workers = groups
         var best: UInt = 0
-        for r in range(7):
+        # repeat at least 7 times and until 0.3 s have been spent on this size (at most 2,000 times)
+        var r = 0
+        var spent: UInt = 0
+        while r < 7 or (spent < 300000000 and r < 2000):
             var t0 = perf_counter_ns()
             @parameter
             def one(g: Int):
@@ -81,8 +84,10 @@ def main() raises:
                     tp[4 * g + i] = Int(tr[i])
             parallelize[one](groups, workers)
             var d = perf_counter_ns() - t0
+            spent += d
             if r == 0 or d < best:
                 best = d
+            r += 1
         var total: Float64 = 0.0
         var trades = 0
         for s in range(n_sym):

@@ -14,8 +14,9 @@ fig5_measured_20261121:
   mc.mojo  mc.cpp  mc.py            (a) Monte Carlo European call
   bt.mojo  bt.cpp  bt.py            (b) moving-average crossover backtest
   var_blas.mojo  var_gpu.mojo  var.py   (c) portfolio VaR (Mojo + OpenBLAS, Mojo on GPU, Python / NumPy)
-  run_quiet2.sh                     run script (waits until the machine is idle before each program)
-  logs_final/                       raw logs of the run plotted in Figure 5
+  run_quiet3.sh                     run script (waits until the machine is idle before each program)
+  logs_final/                       raw logs of the run plotted in Figure 5 (each size repeated at least
+                                    7 times and until 0.3 s have been spent on it)
   make_fig5_measured.py             python make_fig5_measured.py logs_final fig5_measured.png
 
 Machine for Figure 5: Intel Xeon w7-3445, NVIDIA RTX 6000 Ada, Mojo 1.0.0b1, g++ 13.3,
@@ -25,7 +26,7 @@ compiler_output/              Section 3.2: bench_dot_product.s (mojo build --emi
                               mc.ll and mc_kernel_device_code.elf (mojo build --emit llvm, Mojo 0.25.6.0)
 listing_sources/              Listing 1 source: bench_dot_product.mojo
 
-The Figure 5 run also timed one further Mojo CPU kernel that is not part of the figure;
-that program and its log lines are not included here.
 
 table3_gpu_montecarlo/        Table 3: GPU Monte Carlo in CUDA C, Mojo and PyTorch; sources, build commands, raw output
+
+supplement/                   Supplemental material of the article (PDF): hardware, inputs, timing procedure, full results

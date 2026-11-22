@@ -61,15 +61,16 @@ for n_sym in [4, 40, 400, 4000, 40000]:
     px = gen(n_sym)
     if which == "python":
         rows = px.tolist()
-        reps = 3 if n_sym <= 400 else 1
+        min_reps = 1
         f = lambda: run_python(rows)
     else:
         import pandas as pd
         df = pd.DataFrame(px.T.copy())
-        reps = 7 if n_sym <= 4000 else 3
+        min_reps = 7
         f = lambda: run_pandas(df)
-    best = 1e30
-    for _ in range(reps):
+    # at least min_reps runs, and until 0.3 s have been spent on this size (at most 2,000)
+    best = 1e30; spent = 0.0; k = 0
+    while k < min_reps or (spent < 300.0 and k < 2000):
         t0 = time.perf_counter(); r = f(); d = (time.perf_counter() - t0) * 1e3
-        best = min(best, d)
+        best = min(best, d); spent += d; k += 1
     print("KEY", which, "bt bars", n_sym * T, "ms", best, "pnl", repr(r[0]), "trades", r[1], flush=True)

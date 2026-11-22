@@ -44,7 +44,10 @@ def main() raises:
         var chunk = (n + workers - 1) // workers
         var best: UInt = 0
         var pr: Float64 = 0.0
-        for r in range(7):
+        # repeat at least 7 times and until 0.3 s have been spent on this size (at most 2,000 times)
+        var r = 0
+        var spent: UInt = 0
+        while r < 7 or (spent < 300000000 and r < 2000):
             var t0 = perf_counter_ns()
             @parameter
             def one(w: Int):
@@ -77,6 +80,8 @@ def main() raises:
                 total += partial[w]
             pr = exp(-0.05) * total / Float64(n)
             var d = perf_counter_ns() - t0
+            spent += d
             if r == 0 or d < best:
                 best = d
+            r += 1
         print("KEY mojo mc n", n, "ms", Float64(best) / 1.0e6, "price", pr)

@@ -55,13 +55,14 @@ sizes = [int(a) for a in sys.argv[2:]] or [100, 500, 1000, 2000, 5000]
 for n in sizes:
     x = gen(n)
     if which == "python":
-        cols = x.T.tolist(); reps = 1
+        cols = x.T.tolist(); min_reps = 1
         f = lambda: var_python(cols)
     else:
-        reps = 5
+        min_reps = 7
         f = lambda: var_numpy(x)
-    best = 1e30
-    for _ in range(reps):
+    # at least min_reps runs, and until 0.3 s have been spent on this size (at most 2,000)
+    best = 1e30; spent = 0.0; k = 0
+    while k < min_reps or (spent < 300.0 and k < 2000):
         t0 = time.perf_counter(); r = f(); d = (time.perf_counter() - t0) * 1e3
-        best = min(best, d)
+        best = min(best, d); spent += d; k += 1
     print("KEY", which, "var n", n, "ms", best, "var99", repr(r[0]), "component_sum", repr(r[1]), flush=True)
