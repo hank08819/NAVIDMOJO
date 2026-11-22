@@ -1,0 +1,24 @@
+Source: terminal output on the server
+Time stamp of the output: 2026-06-15T05:38:46Z. Extracted 2026-11-20.
+Terminal output behind the table of the first submission. CUDA C built with nvcc -O3 -arch=sm_89, without -use_fast_math; average of 20 launches.
+
+Detected GPU arch: sm_89
+ Running CUDA C benchmark ...
+GPUs detected: 2  -- using GPU 0 only
+GPU 0: NVIDIA RTX 6000 Ada Generation
+       Paths         CUDA C (ms)     Price
+     1000000               0.005   10.4561
+    10000000               0.028   10.4517
+   100000000               0.266   10.4502
+ Running PyTorch GPU baseline ...
+Device : NVIDIA RTX 6000 Ada Generation
+       Paths    PyTorch GPU (ms)     Price
+   1,000,000               0.085   10.4576
+  10,000,000               0.269   10.4526
+ 100,000,000               7.964   10.4503
+ Running Mojo GPU kernel ...
+Device: GPU 0
+       Paths     Mojo GPU (ms)     Price
+     1000000             0.003   10.4561
+    10000000             0.013   10.4517
+   100000000             0.109   10.4502

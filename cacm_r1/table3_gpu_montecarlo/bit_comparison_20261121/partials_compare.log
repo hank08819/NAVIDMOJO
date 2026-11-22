@@ -1,0 +1,3 @@
+KEY n 1000000 of 262144 partial sums differ: nofast run1-run2 0 | fast run1-run2 0 | mojo run1-run2 0 | cuda nofast-fast 228556 | mojo-cuda fast 0 | mojo-cuda nofast 228556
+KEY n 10000000 of 262144 partial sums differ: nofast run1-run2 0 | fast run1-run2 0 | mojo run1-run2 0 | cuda nofast-fast 261142 | mojo-cuda fast 155605 | mojo-cuda nofast 260862
+KEY n 100000000 of 262144 partial sums differ: nofast run1-run2 0 | fast run1-run2 0 | mojo run1-run2 0 | cuda nofast-fast 261554 | mojo-cuda fast 223666 | mojo-cuda nofast 252332
