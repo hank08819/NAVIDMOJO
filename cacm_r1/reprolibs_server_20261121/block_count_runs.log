@@ -1,0 +1,87 @@
+date: Sun Nov 22 11:02:18 AM CST 2026
+load:  11:02:18 up 17 days, 21:19,  6 users,  load average: 1.59, 1.59, 1.64
+RUN 1
+KEY blocks 16 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16 workers 1 ms 17.541256
+KEY blocks 16 workers 16 ms 1.467612
+KEY blocks 64 sum 129919820.77064909 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 64 workers 1 ms 18.639271
+KEY blocks 64 workers 16 ms 1.461361
+KEY blocks 256 sum 129919820.77064916 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 256 workers 1 ms 18.463811
+KEY blocks 256 workers 16 ms 1.461759
+KEY blocks 1024 sum 129919820.77064906 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1024 workers 1 ms 18.603446
+KEY blocks 1024 workers 16 ms 1.46564
+KEY blocks 4096 sum 129919820.77064905 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 4096 workers 1 ms 18.121011
+KEY blocks 4096 workers 16 ms 1.468259
+KEY blocks 16384 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16384 workers 1 ms 17.299576
+KEY blocks 16384 workers 16 ms 1.507374
+KEY blocks 65536 sum 129919820.77064922 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 65536 workers 1 ms 15.535151
+KEY blocks 65536 workers 16 ms 1.588556
+KEY blocks 262144 sum 129919820.7706491 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 262144 workers 1 ms 10.99637
+KEY blocks 262144 workers 16 ms 2.103431
+KEY blocks 1048576 sum 129919820.77064908 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1048576 workers 1 ms 13.344219
+KEY blocks 1048576 workers 16 ms 6.216858
+RUN 2
+KEY blocks 16 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16 workers 1 ms 18.645439
+KEY blocks 16 workers 16 ms 1.465828
+KEY blocks 64 sum 129919820.77064909 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 64 workers 1 ms 18.634978
+KEY blocks 64 workers 16 ms 1.458471
+KEY blocks 256 sum 129919820.77064916 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 256 workers 1 ms 18.42369
+KEY blocks 256 workers 16 ms 1.459055
+KEY blocks 1024 sum 129919820.77064906 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1024 workers 1 ms 17.897799
+KEY blocks 1024 workers 16 ms 1.463243
+KEY blocks 4096 sum 129919820.77064905 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 4096 workers 1 ms 17.852735
+KEY blocks 4096 workers 16 ms 1.467204
+KEY blocks 16384 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16384 workers 1 ms 17.484612
+KEY blocks 16384 workers 16 ms 1.501021
+KEY blocks 65536 sum 129919820.77064922 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 65536 workers 1 ms 15.618188
+KEY blocks 65536 workers 16 ms 1.585013
+KEY blocks 262144 sum 129919820.7706491 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 262144 workers 1 ms 11.431189
+KEY blocks 262144 workers 16 ms 2.094406
+KEY blocks 1048576 sum 129919820.77064908 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1048576 workers 1 ms 13.167245
+KEY blocks 1048576 workers 16 ms 6.158798
+RUN 3
+KEY blocks 16 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16 workers 1 ms 18.546651
+KEY blocks 16 workers 16 ms 1.474285
+KEY blocks 64 sum 129919820.77064909 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 64 workers 1 ms 18.08911
+KEY blocks 64 workers 16 ms 1.477727
+KEY blocks 256 sum 129919820.77064916 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 256 workers 1 ms 18.263165
+KEY blocks 256 workers 16 ms 1.470139
+KEY blocks 1024 sum 129919820.77064906 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1024 workers 1 ms 17.924086
+KEY blocks 1024 workers 16 ms 1.471587
+KEY blocks 4096 sum 129919820.77064905 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 4096 workers 1 ms 17.583972
+KEY blocks 4096 workers 16 ms 1.482978
+KEY blocks 16384 sum 129919820.77064914 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 16384 workers 1 ms 17.25459
+KEY blocks 16384 workers 16 ms 1.522729
+KEY blocks 65536 sum 129919820.77064922 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 65536 workers 1 ms 16.211563
+KEY blocks 65536 workers 16 ms 1.641509
+KEY blocks 262144 sum 129919820.7706491 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 262144 workers 1 ms 11.533111
+KEY blocks 262144 workers 16 ms 2.23522
+KEY blocks 1048576 sum 129919820.77064908 same_bits_for_workers_1_to_16 16 of 16
+KEY blocks 1048576 workers 1 ms 13.377842
+KEY blocks 1048576 workers 16 ms 6.411719
+KEY fsum 129919820.77064914 hex 0x1.ef9ad3315250cp+26
