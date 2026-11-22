@@ -27,3 +27,5 @@ listing_sources/              Listing 1 source: bench_dot_product.mojo
 
 The Figure 5 run also timed one further Mojo CPU kernel that is not part of the figure;
 that program and its log lines are not included here.
+
+table3_gpu_montecarlo/        Table 3: GPU Monte Carlo in CUDA C, Mojo and PyTorch; sources, build commands, raw output
