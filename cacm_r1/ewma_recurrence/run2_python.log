@@ -1,0 +1,13 @@
+PY_KEY n_elements 10000000
+PY_KEY alpha 0.05
+PY_KEY n_repeats 5
+PY_KEY price_last 55.49801275527625
+PY_KEY pure_python_best_ns 242525667
+PY_KEY pure_python_last_value 55.519375443590825
+PY_KEY pure_python_checksum 744397789.280765
+PY_KEY numba_best_ns 12168500
+PY_KEY numba_max_abs_diff_vs_python 0.0
+PY_KEY pandas_ewm_best_ns 42721125
+PY_KEY pandas_max_abs_diff_vs_python 1.2789769243681803e-13
+PY_KEY scipy_lfilter_best_ns 24072583
+PY_KEY scipy_max_abs_diff_vs_python 9.947598300641403e-14

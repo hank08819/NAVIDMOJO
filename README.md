@@ -333,3 +333,7 @@ Henry Han. "Mojo: A Deterministic, Scalable Kernel Layer for Financial AI."
 ```
 
 Repository: https://github.com/hank08819/NAVIDMOJO
+
+## CACM revision (R1), November 2026
+
+Code and raw logs of the runs added for the revision are in `cacm_r1/`; see `cacm_r1/README.txt`.

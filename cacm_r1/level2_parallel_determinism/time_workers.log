@@ -1,0 +1,5 @@
+KEY workers 1 ms 115.347 result 3071989207.197443
+KEY workers 2 ms 50.776 result 3071989207.197443
+KEY workers 4 ms 28.142 result 3071989207.197443
+KEY workers 8 ms 14.248 result 3071989207.197443
+KEY workers 16 ms 14.234 result 3071989207.197443

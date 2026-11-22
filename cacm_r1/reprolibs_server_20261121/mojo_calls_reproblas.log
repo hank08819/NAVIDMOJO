@@ -1,0 +1,11 @@
+~/NAVIDMOJO/cacm_r1_reprolibs_20261121/mojo_calls_reproblas.mojo:2:6: warning: Implicit standard library imports are deprecated and will be removed in a future release; fully qualify with 'std.' instead
+from collections import List
+     ^
+     std.
+~/NAVIDMOJO/cacm_r1_reprolibs_20261121/mojo_calls_reproblas.mojo:3:6: warning: Implicit standard library imports are deprecated and will be removed in a future release; fully qualify with 'std.' instead
+from ffi import external_call
+     ^
+     std.
+build 0
+KEY mojo_calls_reproblas sum 129919820.77064914 reversed_input 129919820.77064914 same True
+run 0

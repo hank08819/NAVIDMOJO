@@ -1,0 +1,1 @@
+ExBLAS github riakymch/exblas commit 856130ebcfe906f519a623d57d1359e744e29042; g++ 7.5.0 (conda), cmake 3.27, TBB 2020.2; exsum fpe 0 and 3; threads set by taskset

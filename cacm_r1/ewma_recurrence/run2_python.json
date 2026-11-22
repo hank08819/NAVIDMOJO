@@ -1,0 +1,23 @@
+{
+  "n_elements": 10000000,
+  "alpha": 0.05,
+  "n_repeats": 5,
+  "price_last": 55.49801275527625,
+  "pure_python_best_ns": 242525667,
+  "pure_python_last_value": 55.519375443590825,
+  "pure_python_checksum": 744397789.280765,
+  "numba_best_ns": 12168500,
+  "numba_max_abs_diff_vs_python": 0.0,
+  "pandas_ewm_best_ns": 42721125,
+  "pandas_max_abs_diff_vs_python": 1.2789769243681803e-13,
+  "scipy_lfilter_best_ns": 24072583,
+  "scipy_max_abs_diff_vs_python": 9.947598300641403e-14,
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "numba": "0.68.1",
+    "platform": "macOS-15.4.1-arm64-arm-64bit"
+  }
+}

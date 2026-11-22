@@ -1,0 +1,9 @@
+KEY cub not_guaranteed sum 129919820.77064931 bits 419ef9ad33152518 | repeats 1 of 200 | permuted 129919820.7706496 same_bits 0 | ms 0.6919
+KEY cub run_to_run     sum 129919820.77064908 bits 419ef9ad33152508 | repeats 200 of 200 | permuted 129919820.77064911 same_bits 0 | ms 0.6449
+KEY cub gpu_to_gpu     sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.8504
+KEY cub not_guaranteed sum 129919820.77064903 bits 419ef9ad33152505 | repeats 3 of 200 | permuted 129919820.77064948 same_bits 0 | ms 0.6442
+KEY cub run_to_run     sum 129919820.77064908 bits 419ef9ad33152508 | repeats 200 of 200 | permuted 129919820.77064911 same_bits 0 | ms 0.6444
+KEY cub gpu_to_gpu     sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.8512
+KEY cub not_guaranteed sum 129919820.77064921 bits 419ef9ad33152511 | repeats 2 of 200 | permuted 129919820.770649 same_bits 0 | ms 0.6450
+KEY cub run_to_run     sum 129919820.77064908 bits 419ef9ad33152508 | repeats 200 of 200 | permuted 129919820.77064911 same_bits 0 | ms 0.6457
+KEY cub gpu_to_gpu     sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.8510

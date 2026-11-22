@@ -1,0 +1,6 @@
+MOJO_KEY sequential best_ns 7603000 last_value 55.519375443589425
+MOJO_KEY blocked K 2 best_ns 11045000 last_value 55.51937544358945 max_abs_diff_vs_sequential 1.2789769243681803e-13
+MOJO_KEY blocked K 4 best_ns 6129000 last_value 55.51937544358943 max_abs_diff_vs_sequential 8.526512829121202e-14
+MOJO_KEY blocked K 8 best_ns 4208000 last_value 55.519375443589425 max_abs_diff_vs_sequential 7.105427357601002e-14
+MOJO_KEY blocked K 16 best_ns 3224000 last_value 55.51937544358942 max_abs_diff_vs_sequential 8.526512829121202e-14
+MOJO_KEY blocked K 32 best_ns 3681000 last_value 55.519375443589425 max_abs_diff_vs_sequential 8.526512829121202e-14

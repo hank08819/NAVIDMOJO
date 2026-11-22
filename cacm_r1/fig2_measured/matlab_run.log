@@ -1,0 +1,7 @@
+WARNING: package sun.awt.X11 not in java.desktop
+WARNING: package sun.awt.X11 not in java.desktop
+KEY loop matmul ms 146.976 checksum 33504776.809188
+KEY builtin matmul ms 5.281 checksum 33504776.809188
+KEY loop sort ms 221.511 unsorted 0 median 0.49953113735467769
+KEY builtin sort ms 109.648 median 0.49953113735467769
+KEY loop parse ms 90.091 records 1000000 ts_mod 494906961585 sym 271063082 qty 2549278700 px 204988646.218197

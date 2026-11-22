@@ -1,0 +1,13 @@
+date: Sat Nov 21 11:59:54 CST 2026
+Apple M4 Max
+15.4.1
+Apple clang version 17.0.0 (clang-1700.0.13.3)
+rustc 1.100.0 (0ef1bc386 2026-11-09)
+Mojo 1.0.0b1 (a9591de6)
+Python 3.12.16 NumPy 2.5.5
+C++: clang++ -O3 -mcpu=native -ffp-contract=off -std=c++17
+Rust: rustc -C opt-level=3 -C target-cpu=native
+Mojo: mojo build (default optimization)
+Input: gen_ticks.py, 1,000,000 records; matmul n=512; sort 2,000,000 doubles. Single thread except NumPy matmul (Accelerate/OpenBLAS threads).
+Julia 1.12.2 (official macaarch64 build), julia -t 1, loops with @inbounds
+MATLAB R2024b, maxNumCompThreads(1), hand-written loops (best of 3) and built-ins (best of 5)

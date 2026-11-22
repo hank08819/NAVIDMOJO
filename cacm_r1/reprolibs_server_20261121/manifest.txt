@@ -1,0 +1,8 @@
+Sat Nov 21 12:21:17 PM CST 2026
+(host name removed)
+Model name:                              Intel(R) Xeon(R) w7-3445
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+ReproBLAS: github willow-ahrens/ReproBLAS commit dfb815058dd34b88caba2513cce63bc2e89f951f, built with make, Python 3.10 for its code generator, fold 3
+test: gcc -O3 -march=native -fopenmp
+Mojo 1.0.0b1 (pixi, linux-64), mojo build default
+CPU only; clocks not locked; load: load average: 2.15, 1.87, 1.57

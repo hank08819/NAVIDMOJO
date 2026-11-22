@@ -1,0 +1,42 @@
+RUN 1
+KEY cpp matmul ms 15.774 checksum 33504776.809188
+KEY cpp sort ms 106.622 unsorted 0 median 0.49953113735467769
+KEY cpp parse ms 18.443 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY rust matmul ms 15.761 checksum 33504776.809188
+KEY rust sort ms 111.750 unsorted 0 median 0.4995311373546777
+KEY rust parse ms 22.518 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY mojo matmul ms 32.944 checksum 33504776.80918774
+KEY mojo sort ms 115.088 unsorted 0 median 0.4995311373546777
+KEY mojo parse ms 19.018 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.2181967
+KEY mojo matmul_simd width 2 ms 17.495 checksum 33504776.80918774
+KEY mojo matmul_simd width 4 ms 15.576 checksum 33504776.80918774
+KEY mojo matmul_simd width 8 ms 15.28 checksum 33504776.80918774
+KEY mojo matmul_simd width 16 ms 15.418 checksum 33504776.80918774
+RUN 2
+KEY cpp matmul ms 15.831 checksum 33504776.809188
+KEY cpp sort ms 106.891 unsorted 0 median 0.49953113735467769
+KEY cpp parse ms 18.557 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY rust matmul ms 15.413 checksum 33504776.809188
+KEY rust sort ms 111.990 unsorted 0 median 0.4995311373546777
+KEY rust parse ms 22.862 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY mojo matmul ms 32.498 checksum 33504776.80918774
+KEY mojo sort ms 116.687 unsorted 0 median 0.4995311373546777
+KEY mojo parse ms 19.663 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.2181967
+KEY mojo matmul_simd width 2 ms 18.045 checksum 33504776.80918774
+KEY mojo matmul_simd width 4 ms 15.828 checksum 33504776.80918774
+KEY mojo matmul_simd width 8 ms 15.864 checksum 33504776.80918774
+KEY mojo matmul_simd width 16 ms 15.615 checksum 33504776.80918774
+RUN 3
+KEY cpp matmul ms 15.362 checksum 33504776.809188
+KEY cpp sort ms 107.656 unsorted 0 median 0.49953113735467769
+KEY cpp parse ms 19.042 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY rust matmul ms 15.413 checksum 33504776.809188
+KEY rust sort ms 111.879 unsorted 0 median 0.4995311373546777
+KEY rust parse ms 23.060 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.218197
+KEY mojo matmul ms 32.499 checksum 33504776.80918774
+KEY mojo sort ms 113.698 unsorted 0 median 0.4995311373546777
+KEY mojo parse ms 19.692 records 1000000 ts 1795012241647961585 sym 271063082 qty 2549278700 px 204988646.2181967
+KEY mojo matmul_simd width 2 ms 18.334 checksum 33504776.80918774
+KEY mojo matmul_simd width 4 ms 15.813 checksum 33504776.80918774
+KEY mojo matmul_simd width 8 ms 15.476 checksum 33504776.80918774
+KEY mojo matmul_simd width 16 ms 15.248 checksum 33504776.80918774

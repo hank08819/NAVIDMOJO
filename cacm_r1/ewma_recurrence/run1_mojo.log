@@ -1,0 +1,12 @@
+MOJO_KEY n_elements 10000000
+MOJO_KEY hardware_simd_width 2
+MOJO_KEY n_repeats 5
+MOJO_KEY price_last 55.49801275527486
+MOJO_KEY recurrence_best_ns 15214000
+MOJO_KEY recurrence_last_value 55.51937544358943
+MOJO_KEY recurrence_checksum 744397789.2807621
+MOJO_KEY recurrence_ptr_best_ns 8008000
+MOJO_KEY recurrence_ptr_last_value 55.519375443589425
+MOJO_KEY recurrence_ptr_checksum 744397789.2807621
+MOJO_KEY elementwise_best_ns 1660000
+MOJO_KEY elementwise_last_value 97.78138251879491

@@ -1,0 +1,1 @@
+CCCL commit 9ecdf7ffee993409396f573e8d486b4a4f6418ae, CUB_VERSION 300700; nvcc 12.6.85 -O3 -std=c++17 -arch=sm_89; GPU 1 RTX 6000 Ada; clocks not locked

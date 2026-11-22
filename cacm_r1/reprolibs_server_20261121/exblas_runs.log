@@ -1,0 +1,16 @@
+CORES 0
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 9.715
+CORES 0
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 9.485
+CORES 0
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 9.498
+CORES 0
+KEY exblas fpe 0 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 3 of 3 | permuted 129919820.77064914 same_bits 1 | ms 2663.285
+CORES 0-15
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.913
+CORES 0-15
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.795
+CORES 0-15
+KEY exblas fpe 3 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 200 of 200 | permuted 129919820.77064914 same_bits 1 | ms 0.803
+CORES 0-15
+KEY exblas fpe 0 sum 129919820.77064914 bits 419ef9ad3315250c | repeats 3 of 3 | permuted 129919820.77064914 same_bits 1 | ms 216.887
