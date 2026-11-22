@@ -20,7 +20,7 @@ def series(impl, wl):
     return [a for a, _ in pts], [b for _, b in pts]
 
 GREY, RED, BLUE, GREEN, PURPLE = "#888888", "#c0392b", "#1f4e8c", "#2a9d3f", "#7d3c98"
-fig, axes = plt.subplots(1, 3, figsize=(18, 5.2))
+fig, axes = plt.subplots(1, 3, figsize=(13, 4.0))
 
 def panel(ax, wl, lines, xlabel, ylabel, title):
     for impl, marker, color, label, lw in lines:
@@ -29,7 +29,10 @@ def panel(ax, wl, lines, xlabel, ylabel, title):
     ax.set_xlabel(xlabel, fontsize=10); ax.set_ylabel(ylabel, fontsize=10)
     ax.set_title(title, fontsize=11, fontweight="bold")
     ax.grid(True, which="both", alpha=0.3)
-    ax.legend(loc="upper left", fontsize=8.5)
+    # legend below the panel and room under the curves for the note, so that nothing covers a data point
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, fontsize=8.5, frameon=False, columnspacing=1.2)
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(lo / 30, hi)
 
 def note(ax, text):
     ax.text(0.97, 0.05, text, transform=ax.transAxes, ha="right", va="bottom", fontsize=9,
@@ -50,7 +53,7 @@ ax = axes[1]
 panel(ax, "bt", [("python", "o", GREY, "Pure Python (loop)", 2), ("pandas", "s", RED, "pandas vectorized", 2),
                  ("cpp", "^", BLUE, "C++ (OpenMP, 16 threads)", 2), ("mojo", "v", GREEN, "Mojo (SIMD, 16 threads)", 2.4)],
       "Number of bars (2,500 per symbol $\\times$ symbols)", "Backtest wall-clock time (s)", "(b) Multi-asset backtest")
-note(ax, "Mojo at 100M bars:\n%.0f$\\times$ pure Python, %.0f$\\times$ pandas" % (ratio("python", "mojo", "bt", 10**8), ratio("pandas", "mojo", "bt", 10**8)))
+note(ax, "Mojo at 100M bars:\n{:,.0f}$\\times$ pure Python, {:,.0f}$\\times$ pandas".format(ratio("python", "mojo", "bt", 10**8), ratio("pandas", "mojo", "bt", 10**8)))
 
 # (c) VaR
 ax = axes[2]
