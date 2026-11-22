@@ -35,8 +35,8 @@ def main() raises:
         for _ in range(WORKERS):
             partial.append(0.0)
         var pp = partial.unsafe_ptr()
-        # small jobs use fewer workers: at least 2,048 paths per worker
-        var workers = n // 2048
+        # small jobs use fewer workers: at least 512 paths per worker
+        var workers = n // 512
         if workers < 1:
             workers = 1
         if workers > WORKERS:

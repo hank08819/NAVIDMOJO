@@ -14,7 +14,7 @@ fig5_measured_20261121:
   mc.mojo  mc.cpp  mc.py            (a) Monte Carlo European call
   bt.mojo  bt.cpp  bt.py            (b) moving-average crossover backtest
   var_blas.mojo  var_gpu.mojo  var.py   (c) portfolio VaR (Mojo + OpenBLAS, Mojo on GPU, Python / NumPy)
-  run_quiet3.sh                     run script (waits until the machine is idle before each program)
+  run_quiet4.sh                     run script (waits until the machine is idle before each program)
   logs_final/                       raw logs of the run plotted in Figure 5 (each size repeated at least
                                     7 times and until 0.3 s have been spent on it)
   make_fig5_measured.py             python make_fig5_measured.py logs_final fig5_measured.png
