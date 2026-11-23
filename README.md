@@ -5,7 +5,7 @@ pricer, benchmarked side-by-side on a single NVIDIA GPU.
 
 **Author:** Henry Han, Baylor University
 
-**Paper:** "Mojo: A Deterministic, Scalable Kernel Layer for Financial AI"
+**Paper:** "Mojo: A Reproducible, Scalable Kernel Layer for Financial AI"
 (originally circulated as "Mojo: A Promising Tool for Scalable Financial AI Efficiency"), 2026 — Section 5.5, Table 2.
 
 | File | Language | RNG used |
@@ -327,7 +327,7 @@ large enough (100M gives the most stable price).
 If you use this benchmark in your own work, please cite:
 
 ```
-Henry Han. "Mojo: A Deterministic, Scalable Kernel Layer for Financial AI."
+Henry Han. "Mojo: A Reproducible, Scalable Kernel Layer for Financial AI."
 (originally circulated as "Mojo: A Promising Tool for Scalable Financial AI Efficiency")
 2026.
 ```
