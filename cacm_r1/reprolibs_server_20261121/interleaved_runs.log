@@ -1,0 +1,95 @@
+Sun Nov 22 04:50:10 PM CST 2026
+Mojo 1.0.0b1, mojo build default; ReproBLAS test as built on 2026-11-21 (gcc -O3 -march=native -fopenmp, fold 3)
+load: 3.00 2.20 1.95
+RUN 1 fixed-order kernel
+KEY n_elements 10000000 n_blocks 4096 group 16
+KEY workers 1 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 2 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 3 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 4 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 5 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 6 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 7 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 8 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 9 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 10 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 11 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 12 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 13 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 14 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 15 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 16 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY group_same_bits_as_one_block_at_a_time 16 of 16
+KEY group_repeats_identical 200 of 200
+KEY reversed_input one_block_at_a_time 129919820.77064914 group 129919820.77064914 same True same_as_forward False
+KEY time_ms workers 1 one_block_at_a_time 18.714091 group 4.427307 naive 6.934669
+KEY time_ms workers 16 one_block_at_a_time 1.520426 group 0.324864 naive 0.45403
+RUN 1 ReproBLAS
+KEY naive      sum 129919820.77065952 bits 419ef9ad331527c5 | permuted 129919820.77068399 same_bits 0
+KEY reproblas  sum 129919820.77064914 bits 419ef9ad3315250c | permuted 129919820.77064914 same_bits 1 (fold 3)
+KEY naive_identical_over_thread_counts 1 of 16
+KEY reproblas_identical_over_thread_counts 16 of 16
+KEY reproblas_repeats_identical 200 of 200
+KEY time_ms naive_1 6.604 reproblas_1 6.612 naive_16 1.608 reproblas_16 0.651
+RUN 2 fixed-order kernel
+KEY n_elements 10000000 n_blocks 4096 group 16
+KEY workers 1 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 2 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 3 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 4 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 5 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 6 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 7 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 8 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 9 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 10 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 11 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 12 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 13 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 14 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 15 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 16 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY group_same_bits_as_one_block_at_a_time 16 of 16
+KEY group_repeats_identical 200 of 200
+KEY reversed_input one_block_at_a_time 129919820.77064914 group 129919820.77064914 same True same_as_forward False
+KEY time_ms workers 1 one_block_at_a_time 17.902968 group 3.918204 naive 6.553792
+KEY time_ms workers 16 one_block_at_a_time 1.51317 group 0.319578 naive 0.435076
+RUN 2 ReproBLAS
+KEY naive      sum 129919820.77065952 bits 419ef9ad331527c5 | permuted 129919820.77068399 same_bits 0
+KEY reproblas  sum 129919820.77064914 bits 419ef9ad3315250c | permuted 129919820.77064914 same_bits 1 (fold 3)
+KEY naive_identical_over_thread_counts 1 of 16
+KEY reproblas_identical_over_thread_counts 16 of 16
+KEY reproblas_repeats_identical 200 of 200
+KEY time_ms naive_1 6.374 reproblas_1 6.684 naive_16 1.557 reproblas_16 0.765
+RUN 3 fixed-order kernel
+KEY n_elements 10000000 n_blocks 4096 group 16
+KEY workers 1 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 2 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 3 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 4 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 5 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 6 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 7 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 8 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 9 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 10 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 11 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 12 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 13 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 14 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 15 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY workers 16 one_block_at_a_time 129919820.77064905 group 129919820.77064905
+KEY group_same_bits_as_one_block_at_a_time 16 of 16
+KEY group_repeats_identical 200 of 200
+KEY reversed_input one_block_at_a_time 129919820.77064914 group 129919820.77064914 same True same_as_forward False
+KEY time_ms workers 1 one_block_at_a_time 17.745595 group 3.877856 naive 6.720703
+KEY time_ms workers 16 one_block_at_a_time 1.49253 group 0.31938 naive 0.420586
+RUN 3 ReproBLAS
+KEY naive      sum 129919820.77065952 bits 419ef9ad331527c5 | permuted 129919820.77068399 same_bits 0
+KEY reproblas  sum 129919820.77064914 bits 419ef9ad3315250c | permuted 129919820.77064914 same_bits 1 (fold 3)
+KEY naive_identical_over_thread_counts 1 of 16
+KEY reproblas_identical_over_thread_counts 16 of 16
+KEY reproblas_repeats_identical 200 of 200
+KEY time_ms naive_1 6.535 reproblas_1 6.862 naive_16 1.762 reproblas_16 1.135
+load: 2.92 2.20 1.95
+Sun Nov 22 04:50:14 PM CST 2026
